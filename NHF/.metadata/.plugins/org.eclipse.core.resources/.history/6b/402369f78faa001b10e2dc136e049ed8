@@ -1,0 +1,29 @@
+package kiszel.daniel.state;
+
+import kiszel.daniel.game.Handler;
+import kiszel.daniel.graphic.Assets;
+import kiszel.daniel.worlds.World;
+
+import java.awt.*;
+/**GameStateben hozzom létre a világot és a világot itt updatelem és renderelem */
+public class GameState extends State{
+    private World world;
+
+    public GameState(Handler handler){
+        super(handler);
+        world = new World(handler,"res/worlds/world1.txt");
+        handler.setWorld(world);
+
+    }
+    /**Itt frissítem a world classt. */
+    public void update(){
+        world.update();
+    }
+    /**itt rendelem a hátteret és a worldot */
+    public void render (Graphics g){
+        g.drawImage(Assets.bg,0,0,1600,800,null);
+        world.render(g);
+    }
+
+
+}

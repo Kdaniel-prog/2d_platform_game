@@ -1,0 +1,50 @@
+package kiszel.daniel.game;
+
+import javax.swing.JFrame;
+import java.awt.*;
+import java.io.Serializable;
+
+public class Display implements Serializable {
+
+    private JFrame frame;
+    private Canvas canvas; /** Canvas lehetővé teszi, hogy grafikát rajzoljuk rá*/
+
+    private String title;
+    private int width, height;
+
+    public Display ( String ti, int wi, int hei) {
+        this.title = ti;
+        this.width = wi;
+        this.height = hei;
+
+        createDisplay();
+    }
+    /** A játék kijelzőjének a metődusa */
+    private void createDisplay() {
+        frame = new JFrame(title);
+        frame.setSize(width, height);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); /** <- be kell maga a játékot is zárni mert lehet a háttérbe futhat annak ellenére ha az ablakot bezártuk.*/
+        frame.setResizable(false); /** Én adom meg az ablak méretét a width és heightal a felhasználó nem tudja majd módositani az ablak méretét.*/
+        frame.setLocationRelativeTo(null); /**ha null-ra állítjuk akkor az ablak a kijelző közepénél fog megjeleni és nem a szélén. */
+        frame.setVisible(true); /**true értékre kell állítani vagy külömben nem lesz látható az ablak */
+
+        /** Az ablak az általunk megadott méretbe marad. */
+        canvas = new Canvas();
+        canvas.setPreferredSize(new Dimension(width,height));
+        canvas.setMaximumSize(new Dimension(width,height));
+        canvas.setMinimumSize(new Dimension(width,height));
+        canvas.setFocusable(false);
+        /**canvasünk, hogy müködjön hozzá kell adni a JFramehez. A Jframe packje re-sizeolja az ablakukat de biztosítja hogy lássuk a canvast teljesen.  */
+        frame.add(canvas);
+        frame.pack();
+    }
+    /** Így hozzá férünk a canvas változohoz a többi osztályból */
+    public Canvas getCanvas(){
+        return canvas;
+    }
+
+    public JFrame getFrame(){
+        return frame;
+    }
+
+}

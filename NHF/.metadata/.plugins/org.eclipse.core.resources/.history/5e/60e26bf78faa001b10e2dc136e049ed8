@@ -1,0 +1,13 @@
+package kiszel.daniel.tiles;
+
+
+import kiszel.daniel.graphic.Assets;
+/**Ez az osztály  azért kellet, hogy az üres teret töltse ki */
+public class HoleTile extends Tile{
+    public HoleTile(int id){
+        super(Assets.hole,id);
+    }
+    public boolean isSolid(){
+        return false;
+    }
+}

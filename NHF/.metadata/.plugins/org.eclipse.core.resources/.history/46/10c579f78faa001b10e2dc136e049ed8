@@ -1,0 +1,16 @@
+package kiszel.daniel.tiles;
+
+import kiszel.daniel.graphic.Assets;
+
+public class FlagTile extends Tile{
+    /**Ez a zászlónak az osztálya */
+    public FlagTile(int id){
+        super(Assets.flag,id);
+    }
+    /**ez a metódús felül írja az ős isSolid metódusát és ez egy nem solid elem lesz */
+    public boolean isSolid(){
+        return false;
+    }
+
+
+}

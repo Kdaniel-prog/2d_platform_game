@@ -1,0 +1,16 @@
+package kiszel.daniel.tiles;
+
+
+import kiszel.daniel.graphic.Assets;
+/**Ez az osztály azért volt fontos mert kellet egy block amivel ha a játékos érintkezik akkor meghal */
+public class DieTile extends Tile{
+    public DieTile(int id){
+        super(Assets.hole,id);
+    }
+    public boolean isSolid(){
+        return false;
+    }
+    /**ez a metódus felül írja az ős metódusát és ha ezzel érintkezik a player az megöli */
+    public boolean isKill() {return true;}
+}
+

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>D:/NHF</OriginalElement>
+  <nodes>
+    <node x="298.0" y="1193.0">kiszel.daniel.tiles.DieTile</node>
+    <node x="1038.0" y="1617.0">kiszel.daniel.game.Main</node>
+    <node x="157.0" y="1215.5">kiszel.daniel.tiles.GrassTile</node>
+    <node x="214.0" y="1617.0">kiszel.daniel.graphic.Animation</node>
+    <node x="534.0" y="1339.0">kiszel.daniel.entities.EntityList</node>
+    <node x="1377.0" y="1617.0">kiszel.daniel.UI.ClickListener</node>
+    <node x="1285.0" y="0.0">kiszel.daniel.game.Game</node>
+    <node x="984.0" y="1339.0">kiszel.daniel.UI.UIObject</node>
+    <node x="199.0" y="544.0">kiszel.daniel.entities.Player</node>
+    <node x="894.0" y="217.0">kiszel.daniel.state.WinState</node>
+    <node x="1351.0" y="976.0">kiszel.daniel.test.MyTest</node>
+    <node x="252.0" y="1339.0">kiszel.daniel.UI.UIManager</node>
+    <node x="0.0" y="1339.0">kiszel.daniel.worlds.World</node>
+    <node x="1063.0" y="976.0">kiszel.daniel.game.Handler</node>
+    <node x="419.5" y="976.0">kiszel.daniel.tiles.Tile</node>
+    <node x="455.0" y="1204.0">kiszel.daniel.tiles.WinTile</node>
+    <node x="711.0" y="217.0">kiszel.daniel.state.LoseState</node>
+    <node x="1077.0" y="195.0">kiszel.daniel.state.MenuState</node>
+    <node x="906.0" y="1215.5">kiszel.daniel.tiles.DirtTile</node>
+    <node x="1394.0" y="1339.0">kiszel.daniel.input.KeyManager</node>
+    <node x="1232.0" y="1617.0">kiszel.daniel.graphic.Assets</node>
+    <node x="802.5" y="0.0">kiszel.daniel.state.State</node>
+    <node x="1588.0" y="976.0">kiszel.daniel.input.MouseManager</node>
+    <node x="99.25" y="0.0">kiszel.daniel.entities.Entity</node>
+    <node x="0.0" y="676.0">kiszel.daniel.entities.Bat</node>
+    <node x="528.0" y="228.0">kiszel.daniel.state.GameState</node>
+    <node x="91.75" y="349.0">kiszel.daniel.entities.Creature</node>
+    <node x="749.0" y="1204.0">kiszel.daniel.tiles.HoleTile</node>
+    <node x="607.0" y="1215.5">kiszel.daniel.tiles.BlockTile</node>
+    <node x="1634.0" y="1339.0">kiszel.daniel.graphic.GameCamera</node>
+    <node x="0.0" y="1617.0">kiszel.daniel.game.Display</node>
+    <node x="786.0" y="1339.0">kiszel.daniel.save.Save</node>
+    <node x="768.0" y="1617.0">kiszel.daniel.graphic.ImageLoader</node>
+    <node x="0.0" y="1204.0">kiszel.daniel.tiles.FlagTile</node>
+    <node x="487.0" y="1617.0">kiszel.daniel.graphic.SpriteSheet</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="kiszel.daniel.state.WinState" target="kiszel.daniel.state.State" relationship="GENERALIZATION">
+      <point x="0.0" y="-61.5" />
+      <point x="975.5" y="170.0" />
+      <point x="884.0" y="170.0" />
+      <point x="0.0" y="72.5" />
+    </edge>
+    <edge source="kiszel.daniel.tiles.FlagTile" target="kiszel.daniel.tiles.Tile" relationship="GENERALIZATION">
+      <point x="0.0" y="-39.5" />
+      <point x="68.5" y="1168.0" />
+      <point x="521.0" y="1168.0" />
+      <point x="0.0" y="83.5" />
+    </edge>
+    <edge source="kiszel.daniel.state.MenuState" target="kiszel.daniel.state.State" relationship="GENERALIZATION">
+      <point x="0.0" y="-83.5" />
+      <point x="1158.5" y="170.0" />
+      <point x="884.0" y="170.0" />
+      <point x="0.0" y="72.5" />
+    </edge>
+    <edge source="kiszel.daniel.tiles.WinTile" target="kiszel.daniel.tiles.Tile" relationship="GENERALIZATION">
+      <point x="0.0" y="-39.5" />
+      <point x="0.0" y="83.5" />
+    </edge>
+    <edge source="kiszel.daniel.state.LoseState" target="kiszel.daniel.state.State" relationship="GENERALIZATION">
+      <point x="0.0" y="-61.5" />
+      <point x="792.5" y="170.0" />
+      <point x="884.0" y="170.0" />
+      <point x="0.0" y="72.5" />
+    </edge>
+    <edge source="kiszel.daniel.entities.Bat" target="kiszel.daniel.entities.Creature" relationship="GENERALIZATION">
+      <point x="0.0" y="-61.5" />
+      <point x="89.5" y="519.0" />
+      <point x="215.25" y="519.0" />
+      <point x="0.0" y="72.5" />
+    </edge>
+    <edge source="kiszel.daniel.tiles.BlockTile" target="kiszel.daniel.tiles.Tile" relationship="GENERALIZATION">
+      <point x="0.0" y="-28.0" />
+      <point x="668.0" y="1168.0" />
+      <point x="521.0" y="1168.0" />
+      <point x="0.0" y="83.5" />
+    </edge>
+    <edge source="kiszel.daniel.tiles.HoleTile" target="kiszel.daniel.tiles.Tile" relationship="GENERALIZATION">
+      <point x="0.0" y="-39.5" />
+      <point x="817.5" y="1168.0" />
+      <point x="521.0" y="1168.0" />
+      <point x="0.0" y="83.5" />
+    </edge>
+    <edge source="kiszel.daniel.entities.Player" target="kiszel.daniel.entities.Creature" relationship="GENERALIZATION">
+      <point x="0.0" y="-193.5" />
+      <point x="341.0" y="519.0" />
+      <point x="215.25" y="519.0" />
+      <point x="0.0" y="72.5" />
+    </edge>
+    <edge source="kiszel.daniel.entities.Creature" target="kiszel.daniel.entities.Entity" relationship="GENERALIZATION">
+      <point x="0.0" y="-72.5" />
+      <point x="0.0" y="149.5" />
+    </edge>
+    <edge source="kiszel.daniel.tiles.GrassTile" target="kiszel.daniel.tiles.Tile" relationship="GENERALIZATION">
+      <point x="0.0" y="-28.0" />
+      <point x="217.5" y="1168.0" />
+      <point x="521.0" y="1168.0" />
+      <point x="0.0" y="83.5" />
+    </edge>
+    <edge source="kiszel.daniel.tiles.DirtTile" target="kiszel.daniel.tiles.Tile" relationship="GENERALIZATION">
+      <point x="0.0" y="-28.0" />
+      <point x="962.0" y="1168.0" />
+      <point x="521.0" y="1168.0" />
+      <point x="0.0" y="83.5" />
+    </edge>
+    <edge source="kiszel.daniel.state.GameState" target="kiszel.daniel.state.State" relationship="GENERALIZATION">
+      <point x="0.0" y="-50.5" />
+      <point x="609.5" y="170.0" />
+      <point x="884.0" y="170.0" />
+      <point x="0.0" y="72.5" />
+    </edge>
+    <edge source="kiszel.daniel.tiles.DieTile" target="kiszel.daniel.tiles.Tile" relationship="GENERALIZATION">
+      <point x="0.0" y="-50.5" />
+      <point x="366.5" y="1168.0" />
+      <point x="521.0" y="1168.0" />
+      <point x="0.0" y="83.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="false" x="552.2144341437547" y="229.18692543411692" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
